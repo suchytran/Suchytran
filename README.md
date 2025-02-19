@@ -5,25 +5,26 @@ package main
 
 import "fmt"
 
-type AboutMe struct {
-	Icon string
-	Text string
+type PersonalInfo struct {
+	Symbol string
+	Detail string
 }
 
 func main() {
-	fmt.Println("I am a student who needs to study.")
+	fmt.Println("Hi! I'm passionate about technology and coding.")
 
-	aboutMeList := []AboutMe{
-		{"🌱", "I'm learning about technology"},
-		{"💻“", "I studied computer science"},
-		{"💡¡", "Fun fact ~ Let's get started"},
-		{"🇮🇩", "Borneo, Indonesia"},
+	infoList := []PersonalInfo{
+		{"🚀", "Currently exploring AI and data science"},
+		{"📚", "Majoring in Informatics Engineering"},
+		{"🎯", "Hobbies include solving complex problems and coding"},
+		{"🌍", "Located in Bengkulu, Indonesia"},
 	}
 
-	for _, v := range aboutMeList {
-		fmt.Println(fmt.Sprintf("%s %s", v.Icon, v.Text))
+	for _, info := range infoList {
+		fmt.Printf("%s %s\n", info.Symbol, info.Detail)
 	}
 }
+
 ```
 
 ### Connect with Me:
